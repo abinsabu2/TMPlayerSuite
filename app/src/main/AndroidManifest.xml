@@ -43,6 +43,9 @@
         <activity
             android:name=".TelegramActivity"
             android:exported="false" />
+        <activity
+            android:name=".TelegramLoginActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

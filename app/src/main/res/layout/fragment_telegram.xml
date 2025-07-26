@@ -18,9 +18,20 @@
         android:id="@+id/telegram_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Initializing..."
+        android:text="Click Login to connect to Telegram"
         android:textSize="18sp"
         android:textColor="@android:color/white"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to Telegram"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@color/selected_background"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
