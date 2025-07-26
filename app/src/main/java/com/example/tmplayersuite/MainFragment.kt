@@ -112,6 +112,7 @@ class MainFragment : BrowseSupportFragment() {
         gridRowAdapter.add(resources.getString(R.string.grid_view))
         gridRowAdapter.add(getString(R.string.error_fragment))
         gridRowAdapter.add(resources.getString(R.string.personal_settings))
+        gridRowAdapter.add("Telegram")
         rowsAdapter.add(ListRow(gridHeader, gridRowAdapter))
 
         adapter = rowsAdapter
@@ -150,6 +151,9 @@ class MainFragment : BrowseSupportFragment() {
             } else if (item is String) {
                 if (item.contains(getString(R.string.error_fragment))) {
                     val intent = Intent(activity!!, BrowseErrorActivity::class.java)
+                    startActivity(intent)
+                } else if (item.contains("Telegram")) {
+                    val intent = Intent(activity!!, TelegramActivity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(activity!!, item, Toast.LENGTH_SHORT).show()
